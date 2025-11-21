@@ -45,7 +45,7 @@ export default function Web() {
   }, [step]);
 
   return (
-  <div className="fixed inset-0 bg-linear-to-br from-black via-purple-950 to-pink-900 flex items-center justify-center px-6 text-center overflow-hidden">
+  <div className="fixed inset-0 bg-linear-to-br from-black via-purple-950 to-pink-900 flex flex-col items-center justify-center text-center overflow-hidden h-screen">
 
       {/* Floating hearts on final screen */}
       {step === 3 && (
