@@ -7,18 +7,18 @@
 @tailwind utilities; */
 
 /* ===== 2. Mobile full screen fix (white gap + bottom bar) ===== */
-/* *, *::before, *::after {
+*, *::before, *::after {
   box-sizing: border-box;
-} */
+}
 
-/* html, body, #root {
+html, body, #root {
   height: 100dvh !important;
   min-height: 100dvh !important;
   margin: 0;
   padding: 0;
   overflow: hidden;
   position: relative; /* yeh add kiya */
-/* } */ */
+}
 
 /* ===== 3. Font aur mobile smoothness ===== */
 /* body {
