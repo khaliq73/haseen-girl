@@ -1,25 +1,33 @@
+/* ===== 1. Sabse pehle imports ===== */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ===== 2. Mobile full screen fix (white gap + bottom bar) ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html, body, #root {
-  height: 100% !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
+/* ===== 3. Font aur mobile smoothness ===== */
 body {
+  font-family: 'Comic Neue', cursive, system-ui, -apple-system, sans-serif;
   -webkit-tap-highlight-color: transparent;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
-
-body {
-  font-family: 'Comic Neue', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* ===== 4. Cursive class ===== */
 .font-cursive {
   font-family: 'Dancing Script', cursive;
 }
